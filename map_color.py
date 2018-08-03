@@ -84,8 +84,18 @@ def plot_states(include='all'):
     nx.draw_networkx_edges(G, pos, width=3)  # draws the edges
     plt.show()
 
-plot_states(include='all')
+# plot_states(include='all')
 
 # east coast
-plot_states(include=('ME', 'NH', 'RI', 'NY', 'OH', 'KY', 'VT', 'MA', 'PA', 'MD', 'CT',
-                     'TN', 'AL', 'NJ', 'NY', 'VA', 'WV', 'NC', 'SC', 'GA', 'FL'))
+# plot_states(include=('ME', 'NH', 'RI', 'NY', 'OH', 'KY', 'VT', 'MA', 'PA', 'MD', 'CT',
+                     # 'TN', 'AL', 'NJ', 'NY', 'VA', 'WV', 'NC', 'SC', 'GA', 'FL'))
+
+# chain - west coast
+# plot_states(include=('WA', 'OR', 'CA', 'AZ', 'NM', 'TX'))
+
+# not chain - west coast incl Nevada
+# plot_states(include=('WA', 'OR', 'CA', 'NV','AZ', 'NM', 'TX'))
+
+# midwest
+# Ohio, Michigan, Indiana, Wisconsin, Illinois, Minnesota, Iowa, Missouri, North Dakota, South Dakota, Nebraska, and Kansas
+plot_states(include=('OH', 'MI', 'IN', 'WI', 'IL', 'MN', 'IA', 'MO', 'ND', 'SD', 'NE', 'KS'))
